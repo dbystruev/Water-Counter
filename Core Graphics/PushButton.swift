@@ -10,6 +10,9 @@ import UIKit
 
 @IBDesignable class PushButton: UIButton {
     
+    @IBInspectable var fillColor = #colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1)
+    @IBInspectable var isAddButton = true
+    
     private struct Constants {
         static let plusLineWidth: CGFloat = 3
         static let plusButtonScale: CGFloat = 0.6
@@ -25,7 +28,7 @@ import UIKit
     
     override func draw(_ rect: CGRect) {
         let path = UIBezierPath(ovalIn: rect)
-        UIColor.black.setFill()
+        fillColor.setFill()
         path.fill()
         
         // Horizontal Line
@@ -37,11 +40,16 @@ import UIKit
         plusPath.move(to: CGPoint(x: halfWidth - halfPlusWidth, y: halfHeight))
         plusPath.addLine(to: CGPoint(x: halfWidth + halfPlusWidth, y: halfHeight))
         
-        UIColor.white.setStroke()
+        // Vertical Line
+        if isAddButton {
+        plusPath.move(to: CGPoint(x: halfWidth, y: halfHeight - halfPlusWidth))
+        plusPath.addLine(to: CGPoint(x: halfWidth, y: halfHeight +  halfPlusWidth))
+        }
         
+        // Paint with white color
+        UIColor.white.setStroke()
         plusPath.stroke()
         
-        // Vertical Line
     }
     
 }
