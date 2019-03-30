@@ -17,23 +17,6 @@
 		AC2D1375224622540076D242 /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2D1374224622540076D242 /* PushButton.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		AC2D1358224621F50076D242 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC2D133B224621F40076D242 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC2D1342224621F40076D242;
-			remoteInfo = "Core Graphics";
-		};
-		AC2D1363224621F50076D242 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC2D133B224621F40076D242 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC2D1342224621F40076D242;
-			remoteInfo = "Core Graphics";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		699F9278224F5088008B2949 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		699F927A224F5474008B2949 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
@@ -44,27 +27,11 @@
 		AC2D134D224621F40076D242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC2D1350224621F40076D242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC2D1352224621F40076D242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC2D1357224621F50076D242 /* Core GraphicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Core GraphicsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC2D1362224621F50076D242 /* Core GraphicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Core GraphicsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2D1374224622540076D242 /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AC2D1340224621F40076D242 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC2D1354224621F50076D242 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC2D135F224621F50076D242 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -123,8 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				AC2D1343224621F40076D242 /* Core Graphics.app */,
-				AC2D1357224621F50076D242 /* Core GraphicsTests.xctest */,
-				AC2D1362224621F50076D242 /* Core GraphicsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,42 +125,6 @@
 			productReference = AC2D1343224621F40076D242 /* Core Graphics.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AC2D1356224621F50076D242 /* Core GraphicsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AC2D136E224621F50076D242 /* Build configuration list for PBXNativeTarget "Core GraphicsTests" */;
-			buildPhases = (
-				AC2D1353224621F50076D242 /* Sources */,
-				AC2D1354224621F50076D242 /* Frameworks */,
-				AC2D1355224621F50076D242 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AC2D1359224621F50076D242 /* PBXTargetDependency */,
-			);
-			name = "Core GraphicsTests";
-			productName = "Core GraphicsTests";
-			productReference = AC2D1357224621F50076D242 /* Core GraphicsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		AC2D1361224621F50076D242 /* Core GraphicsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AC2D1371224621F50076D242 /* Build configuration list for PBXNativeTarget "Core GraphicsUITests" */;
-			buildPhases = (
-				AC2D135E224621F50076D242 /* Sources */,
-				AC2D135F224621F50076D242 /* Frameworks */,
-				AC2D1360224621F50076D242 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AC2D1364224621F50076D242 /* PBXTargetDependency */,
-			);
-			name = "Core GraphicsUITests";
-			productName = "Core GraphicsUITests";
-			productReference = AC2D1362224621F50076D242 /* Core GraphicsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,14 +137,7 @@
 				TargetAttributes = {
 					AC2D1342224621F40076D242 = {
 						CreatedOnToolsVersion = 10.0;
-					};
-					AC2D1356224621F50076D242 = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = AC2D1342224621F40076D242;
-					};
-					AC2D1361224621F50076D242 = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = AC2D1342224621F40076D242;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -233,8 +155,6 @@
 			projectRoot = "";
 			targets = (
 				AC2D1342224621F40076D242 /* Core Graphics */,
-				AC2D1356224621F50076D242 /* Core GraphicsTests */,
-				AC2D1361224621F50076D242 /* Core GraphicsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -247,20 +167,6 @@
 				AC2D1351224621F40076D242 /* LaunchScreen.storyboard in Resources */,
 				AC2D134E224621F40076D242 /* Assets.xcassets in Resources */,
 				AC2D134C224621F40076D242 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC2D1355224621F50076D242 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC2D1360224621F50076D242 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,34 +185,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC2D1353224621F50076D242 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC2D135E224621F50076D242 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AC2D1359224621F50076D242 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AC2D1342224621F40076D242 /* Core Graphics */;
-			targetProxy = AC2D1358224621F50076D242 /* PBXContainerItemProxy */;
-		};
-		AC2D1364224621F50076D242 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AC2D1342224621F40076D242 /* Core Graphics */;
-			targetProxy = AC2D1363224621F50076D242 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AC2D134A224621F40076D242 /* Main.storyboard */ = {
@@ -457,7 +336,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "horoshkola.Core-Graphics";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -475,86 +354,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "horoshkola.Core-Graphics";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		AC2D136F224621F50076D242 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Core GraphicsTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "horoshkola.Core-GraphicsTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Core Graphics.app/Core Graphics";
-			};
-			name = Debug;
-		};
-		AC2D1370224621F50076D242 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Core GraphicsTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "horoshkola.Core-GraphicsTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Core Graphics.app/Core Graphics";
-			};
-			name = Release;
-		};
-		AC2D1372224621F50076D242 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Core GraphicsUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "horoshkola.Core-GraphicsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Core Graphics";
-			};
-			name = Debug;
-		};
-		AC2D1373224621F50076D242 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Core GraphicsUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "horoshkola.Core-GraphicsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Core Graphics";
 			};
 			name = Release;
 		};
@@ -575,24 +376,6 @@
 			buildConfigurations = (
 				AC2D136C224621F50076D242 /* Debug */,
 				AC2D136D224621F50076D242 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AC2D136E224621F50076D242 /* Build configuration list for PBXNativeTarget "Core GraphicsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AC2D136F224621F50076D242 /* Debug */,
-				AC2D1370224621F50076D242 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AC2D1371224621F50076D242 /* Build configuration list for PBXNativeTarget "Core GraphicsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AC2D1372224621F50076D242 /* Debug */,
-				AC2D1373224621F50076D242 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
