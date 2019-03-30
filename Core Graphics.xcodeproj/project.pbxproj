@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		699F9279224F5088008B2949 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699F9278224F5088008B2949 /* Buttons.swift */; };
+		699F927B224F5474008B2949 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699F927A224F5474008B2949 /* CounterView.swift */; };
 		AC2D1347224621F40076D242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2D1346224621F40076D242 /* AppDelegate.swift */; };
 		AC2D1349224621F40076D242 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2D1348224621F40076D242 /* ViewController.swift */; };
 		AC2D134C224621F40076D242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC2D134A224621F40076D242 /* Main.storyboard */; };
 		AC2D134E224621F40076D242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2D134D224621F40076D242 /* Assets.xcassets */; };
 		AC2D1351224621F40076D242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC2D134F224621F40076D242 /* LaunchScreen.storyboard */; };
-		AC2D135C224621F50076D242 /* Core_GraphicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2D135B224621F50076D242 /* Core_GraphicsTests.swift */; };
-		AC2D1367224621F50076D242 /* Core_GraphicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2D1366224621F50076D242 /* Core_GraphicsUITests.swift */; };
 		AC2D1375224622540076D242 /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2D1374224622540076D242 /* PushButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		699F9278224F5088008B2949 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		699F927A224F5474008B2949 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		AC2D1343224621F40076D242 /* Core Graphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Graphics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2D1346224621F40076D242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC2D1348224621F40076D242 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,11 +45,7 @@
 		AC2D1350224621F40076D242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC2D1352224621F40076D242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC2D1357224621F50076D242 /* Core GraphicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Core GraphicsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC2D135B224621F50076D242 /* Core_GraphicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core_GraphicsTests.swift; sourceTree = "<group>"; };
-		AC2D135D224621F50076D242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC2D1362224621F50076D242 /* Core GraphicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Core GraphicsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC2D1366224621F50076D242 /* Core_GraphicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core_GraphicsUITests.swift; sourceTree = "<group>"; };
-		AC2D1368224621F50076D242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC2D1374224622540076D242 /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,12 +74,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		699F9274224F4ECC008B2949 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				699F9278224F5088008B2949 /* Buttons.swift */,
+				699F927A224F5474008B2949 /* CounterView.swift */,
+				AC2D1374224622540076D242 /* PushButton.swift */,
+				AC2D134F224621F40076D242 /* LaunchScreen.storyboard */,
+				AC2D134A224621F40076D242 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		699F9275224F4F7F008B2949 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		699F9276224F4F85008B2949 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC2D1348224621F40076D242 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		699F9277224F4FDF008B2949 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC2D1346224621F40076D242 /* AppDelegate.swift */,
+				AC2D134D224621F40076D242 /* Assets.xcassets */,
+				AC2D1352224621F40076D242 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		AC2D133A224621F40076D242 = {
 			isa = PBXGroup;
 			children = (
 				AC2D1345224621F40076D242 /* Core Graphics */,
-				AC2D135A224621F50076D242 /* Core GraphicsTests */,
-				AC2D1365224621F50076D242 /* Core GraphicsUITests */,
 				AC2D1344224621F40076D242 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,33 +132,12 @@
 		AC2D1345224621F40076D242 /* Core Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				AC2D1346224621F40076D242 /* AppDelegate.swift */,
-				AC2D1374224622540076D242 /* PushButton.swift */,
-				AC2D1348224621F40076D242 /* ViewController.swift */,
-				AC2D134A224621F40076D242 /* Main.storyboard */,
-				AC2D134D224621F40076D242 /* Assets.xcassets */,
-				AC2D134F224621F40076D242 /* LaunchScreen.storyboard */,
-				AC2D1352224621F40076D242 /* Info.plist */,
+				699F9275224F4F7F008B2949 /* Model */,
+				699F9274224F4ECC008B2949 /* View */,
+				699F9276224F4F85008B2949 /* Controller */,
+				699F9277224F4FDF008B2949 /* Supporting Files */,
 			);
 			path = "Core Graphics";
-			sourceTree = "<group>";
-		};
-		AC2D135A224621F50076D242 /* Core GraphicsTests */ = {
-			isa = PBXGroup;
-			children = (
-				AC2D135B224621F50076D242 /* Core_GraphicsTests.swift */,
-				AC2D135D224621F50076D242 /* Info.plist */,
-			);
-			path = "Core GraphicsTests";
-			sourceTree = "<group>";
-		};
-		AC2D1365224621F50076D242 /* Core GraphicsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AC2D1366224621F50076D242 /* Core_GraphicsUITests.swift */,
-				AC2D1368224621F50076D242 /* Info.plist */,
-			);
-			path = "Core GraphicsUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +274,8 @@
 				AC2D1349224621F40076D242 /* ViewController.swift in Sources */,
 				AC2D1347224621F40076D242 /* AppDelegate.swift in Sources */,
 				AC2D1375224622540076D242 /* PushButton.swift in Sources */,
+				699F9279224F5088008B2949 /* Buttons.swift in Sources */,
+				699F927B224F5474008B2949 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +283,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC2D135C224621F50076D242 /* Core_GraphicsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC2D1367224621F50076D242 /* Core_GraphicsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +449,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Core Graphics/Info.plist";
+				DEVELOPMENT_TEAM = 8J39KF9DMS;
+				INFOPLIST_FILE = "$(SRCROOT)/Core Graphics/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +467,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Core Graphics/Info.plist";
+				DEVELOPMENT_TEAM = 8J39KF9DMS;
+				INFOPLIST_FILE = "$(SRCROOT)/Core Graphics/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
